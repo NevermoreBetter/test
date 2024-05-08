@@ -96,7 +96,7 @@ body {
 }
 
 .main-container__first, .main-container__second, .main-container__fourth, .main-container__fifth {
-  padding: 0 9%;
+  padding: 0 5%;
 }
 .main-container__third {
   position: relative;
@@ -208,7 +208,7 @@ body {
 }
 
 .image-list {
-  margin-top: 50%;
+  margin-top: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
