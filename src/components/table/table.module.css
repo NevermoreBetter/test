@@ -1,19 +1,45 @@
 .tableContainer {
   padding: 20px;
 }
+.tableContainer .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tableContainer .controls {
   margin-bottom: 20px;
+  width: 60%;
 }
-.tableContainer .controls .searchInput {
+.tableContainer .controls .searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.tableContainer .controls .searchBar .searchInput {
   padding: 8px;
-  margin-bottom: 10px;
   width: 100%;
   max-width: 300px;
+}
+.tableContainer .controls .searchBar .addBtn {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #5b6ad0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+}
+.tableContainer .controls .searchBar .addBtn:hover {
+  background-color: #5b6ad0;
 }
 .tableContainer .controls .addEmployee {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-block: 20px;
   flex-wrap: wrap;
 }
 .tableContainer .controls .addEmployee input {
@@ -22,18 +48,17 @@
   min-width: 200px;
 }
 .tableContainer .controls .addEmployee button {
-  padding: 8px 16px;
-  background-color: #4caf50;
+  padding: 12px 20px;
+  background-color: #5b6ad0;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .tableContainer .controls .addEmployee button:hover {
-  background-color: #45a049;
+  background-color: #5b6ad0;
 }
 .tableContainer .table {
-  color: black;
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
@@ -70,16 +95,16 @@
   cursor: pointer;
 }
 .tableContainer .table td button:first-of-type {
-  background-color: #2196f3;
-  color: white;
+  color: #3e9392;
+  background-color: transparent;
 }
 .tableContainer .table td button:first-of-type:hover {
-  background-color: #0b7dda;
+  color: green;
 }
 .tableContainer .table td button:last-of-type {
-  background-color: #f44336;
-  color: white;
+  color: #3e9392;
+  background-color: transparent;
 }
 .tableContainer .table td button:last-of-type:hover {
-  background-color: #da190b;
+  color: red;
 }/*# sourceMappingURL=table.module.css.map */

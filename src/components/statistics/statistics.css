@@ -1,0 +1,46 @@
+.budget-stats__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.budget-stats__header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.budget-stats__header .results-count {
+  color: #6b7280;
+}
+.budget-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.budget-card {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+.budget-card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.budget-card .budget-label {
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.budget-card .budget-amount {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.budget-card:hover {
+  background-color: #4338ca;
+  color: white;
+}/*# sourceMappingURL=statistics.css.map */
