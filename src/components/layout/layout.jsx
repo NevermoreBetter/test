@@ -1,4 +1,3 @@
-// components/Layout/Layout.jsx
 import Sidebar from "../sidebar/sidebar";
 import styles from "./layout.module.css";
 
