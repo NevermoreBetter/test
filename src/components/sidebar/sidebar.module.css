@@ -3,51 +3,24 @@
   flex-direction: column;
   width: 250px;
   height: 100vh;
-  background-color: #1a1a1a;
-  color: #fff;
   transition: width 0.3s ease;
   position: fixed;
   left: 0;
   top: 0;
 }
-.sidebar.collapsed {
-  width: 64px;
-}
-.sidebar.collapsed .logo {
-  justify-content: center;
-}
-.sidebar.collapsed .navItem {
-  justify-content: center;
-  padding: 12px;
-}
 .sidebar .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 12px 23px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.sidebar .header .logo {
+.sidebar .header .content {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.sidebar .header .toggleButton {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-}
-.sidebar .header .toggleButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
 }
 .sidebar .nav {
   flex: 1;
@@ -60,17 +33,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
   padding: 12px 16px;
-  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.2s;
 }
+.sidebar .nav .navItem .menu {
+  margin-left: auto;
+}
 .sidebar .nav .navItem:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-.sidebar .nav .navItem.active {
-  background-color: #2196F3;
 }
 .sidebar .nav .navItem span {
   font-size: 0.9rem;
@@ -79,7 +52,7 @@
   padding: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.sidebar .footer .signOutButton {
+.sidebar .footer .footerButton {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -87,14 +60,13 @@
   padding: 12px;
   background: none;
   border: none;
-  color: #fff;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.2s;
 }
-.sidebar .footer .signOutButton:hover {
+.sidebar .footer .footerButton:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.sidebar .footer .signOutButton span {
+.sidebar .footer .footerButton span {
   font-size: 0.9rem;
 }/*# sourceMappingURL=sidebar.module.css.map */

@@ -9,7 +9,7 @@ import {
  setSortConfig,
 } from "../../state/users/employeesReducer";
 import styles from "./table.module.css";
-import { Check, CircleX, Cross, Pen, Trash } from "lucide-react";
+import { Check, CircleUserRound, CircleX, Pen, Trash } from "lucide-react";
 import BudgetStats from "../statistics/statistics";
 
 const STATUS_OPTIONS = ["Free", "Working", "Busy", "On Vacation"];
@@ -146,7 +146,7 @@ const EmployeeTable = () => {
        className={styles.addBtn}
        onClick={() => setAddingEmployee(!addingEmployee)}
       >
-       Add Employee
+       {addingEmployee ? "Cancel" : "Add Employee"}
       </button>
      </div>
      {addingEmployee && (
@@ -282,7 +282,12 @@ const EmployeeTable = () => {
          </>
         ) : (
          <>
-          <td>{employee.name}</td>
+          <td>
+           <div className={styles.user}>
+            <CircleUserRound />
+            {employee.name}
+           </div>
+          </td>
           <td>{employee.email}</td>
           <td>{renderStatusBadge(employee.status)}</td>
           <td>{employee.role}</td>

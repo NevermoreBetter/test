@@ -2,12 +2,11 @@
 
 import { useSelector } from "react-redux";
 import "./statistics.css";
-import { ArrowDown, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const BudgetStats = () => {
  const employeeCount = useSelector((state) => state.employees);
  const budgetAmount = 85125.0;
- console.log(employeeCount.employees.length);
  return (
   <div className="budget-stats">
    <div className="budget-stats__header">

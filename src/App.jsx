@@ -1,15 +1,18 @@
 import "./App.css";
 import { Provider } from "react-redux";
-import { store } from "./state/store";
+import { persistor, store } from "./state/store";
 import EmployeeTable from "./components/table/table";
 import Layout from "./components/layout/layout";
+import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
  return (
   <Provider store={store}>
-   <Layout>
-    <EmployeeTable />
-   </Layout>
+   <PersistGate loading={null} persistor={persistor}>
+    <Layout>
+     <EmployeeTable />
+    </Layout>
+   </PersistGate>
   </Provider>
  );
 }
