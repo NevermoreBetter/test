@@ -1,5 +1,3 @@
-// BudgetStats.tsx
-
 import { useSelector } from "react-redux";
 import "./statistics.css";
 import { ChevronDown, ChevronUp } from "lucide-react";
